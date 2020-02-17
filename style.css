@@ -173,7 +173,6 @@ p {
 .cvbouton a {
 	margin: auto;
 	font-weight: bold;
-	font-size: 1.1em;
 	color: #f1f1f1;
 }
 
@@ -348,12 +347,14 @@ p {
 	padding-top: 20px;
 }
 
-.sec2 h2 {
+.sec2 h2,
+.contact h2 {
 	font-weight: 800;
 	color:#fff;
 	text-transform: uppercase;
 	font-size: 4rem;
 	text-align: center;
+	margin-top: 20px;
 }
 
 .sec2 .container .row {
@@ -440,7 +441,10 @@ p {
 }
 
 .container .parcoursBox .content h3 {
-    color: #fff;
+	color: #fff;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
     transition: .5s;
     margin: 0 0 10px;
     padding: 0;
@@ -664,7 +668,7 @@ p {
 	padding: 100px 0 0 0;
 	background: url(image/img4.jpg);
 	background-size: cover;
-	min-height: 100vh;
+	min-height: 80vh;
 }
 
 .contact form {
@@ -699,14 +703,24 @@ p {
 	font-size: 1.25rem;
 }
 
+.contact .center {
+	display: flex;
+}
+
+.contact .center button{
+	margin: auto;
+	margin-top: 20px;
+}
+
 /* FOOTER */
 
 footer {
 	background: #000;
+	min-height: 20vh;
 }
 
 .divFooter {
-	margin: 0 auto;
+	padding: 50px auto 0;
 	display: flex;
 	justify-content: space-around;
 }
@@ -780,6 +794,10 @@ footer {
 .divFooter .box .logo:hover ~ h4:before {
 	left: initial;
 	right: -101%;
+}
+
+.divFooter a {
+	text-decoration: none;
 }
 
 .copyright {
